@@ -1,3 +1,3 @@
-docker stop transformarservice
-docker rm transformarservice
-docker image rm kmiloacdcs/transformarservice
+docker stop api_transformacion
+docker rm api_transformacion
+docker image rm duvanoff/api_transformacion
