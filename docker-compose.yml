@@ -25,5 +25,5 @@ services:
     networks: 
       - "service-docker"
 networks:
-  service-compose-net:
+  service-docker:
     driver: bridge
