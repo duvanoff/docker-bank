@@ -1,0 +1,4 @@
+co/edu/javeriana/aes/modaval/resources/pagos/config/ApplicationConfig.class
+co/edu/javeriana/aes/modaval/resources/pagos/entity/Resultado.class
+co/edu/javeriana/aes/modaval/resources/pagos/entity/Factura.class
+co/edu/javeriana/aes/modaval/resources/pagos/boundary/PaymentResource.class

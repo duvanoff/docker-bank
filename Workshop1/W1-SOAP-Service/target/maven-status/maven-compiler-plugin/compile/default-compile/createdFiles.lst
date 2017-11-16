@@ -1,0 +1,9 @@
+co/edu/javeriana/aes/modval/pagos/artifacts/Resultado.class
+co/edu/javeriana/aes/modval/pagos/artifacts/PagosInerface.class
+co/edu/javeriana/aes/modval/pagos/artifacts/package-info.class
+co/edu/javeriana/aes/modval/pagos/artifacts/ObjectFactory.class
+co/edu/javeriana/aes/modval/pagos/artifacts/ServiciosPagos.class
+co/edu/javeriana/aes/modval/pagos/artifacts/Pago.class
+co/edu/javeriana/aes/modval/pagos/artifacts/ReferenciaFactura.class
+co/edu/javeriana/aes/modval/pagos/artifacts/ResultadoConsulta.class
+co/edu/javeriana/aes/modval/pagos/boundary/PagosService.class
