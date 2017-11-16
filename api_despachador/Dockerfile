@@ -12,10 +12,10 @@ RUN apt-cache pkgnames | grep php7.1
 RUN apt install -y php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt
 RUN apt-get install curl -y &&  apt-get install nano -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN git clone https://gitlab.com/omadaco/sumamva.git
-RUN mv sumamva /var/www/html
+RUN git clone https://github.com/duvanoff/docker-bank.git
+RUN mv api_despachador /var/www/html
 RUN echo 'ServerName localhost' >> /etc/apache2/apache2.conf
-RUN echo 'Alias /sumamva  /var/www/html/sumamva' >> /etc/apache2/apache2.conf
+RUN echo 'Alias /api_despachador  /var/www/html/api_despachador' >> /etc/apache2/apache2.conf
 RUN a2enmod rewrite
 RUN /usr/sbin/a2ensite default-ssl
 RUN /usr/sbin/a2enmod ssl
