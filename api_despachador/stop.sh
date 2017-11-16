@@ -1,2 +1,3 @@
-docker stop api
-docker rm api
+docker stop api_despachador
+docker rm api_despachador
+docker image rm duvanoff/api_despachador
