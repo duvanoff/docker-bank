@@ -1,3 +1,3 @@
 
-docker build -t kmiloacdcs/transformarservice .
-docker run -d  --name transformarservice -p 8084:8084 kmiloacdcs/transformarservice
+docker build -t duvanoff/api_transformacion .
+docker run -d  --name transformarservice -p 7074:9997 duvanoff/api_transformacion

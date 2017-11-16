@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>SumaNumeros</artifactId>
+    <artifactId>APIPresentación</artifactId>
     <version>CamiloAlbarracin</version>
     <packaging>war</packaging>
 
-    <name>SumaNumeros</name>
+    <name>API Presentacion</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
