@@ -12,7 +12,7 @@ Se crearon 4 contenedores para orquestar consumo de servicios en PHP y Java.
 
 El archivo docker-compose.yml contiene la orquestación de los servicios docker, definiendo cada uno de los puertos de consulta de los servicios y una red docker con nombre "service-docker" haciendo uso de un Bridge para que dichos servicios se conozcan dentro de la misma red.
 
-1. Dockerizacion de servicios
+Dockerizacion de servicios
 ```bash
 version: '3'
 services:
@@ -44,19 +44,14 @@ networks:
   service-docker:
     driver: bridge
 ```
-Este archivo contiene las instrucciones para bajar la imagen de Docker HUB y crear el contenedor en un solo comando.
 
-2. Luego se accede desde el navedagor a la siguiente URL con el puerto 80:
+2. Ejecución del contenedor global:
 ```
- http://localhost/mva/suma.php
+sh start.sh
 ```
-3. Seguido del suma.php adiciono el signo "?" y sumo las dos variables separadas por el "&":
-```
-Ej: http://localhost/mva/suma.php?num1=3&num2=5
-```
-4. Eliminación del contenedor y la imagen
+3. Eliminación del contenedor y la imagen
 Se descarga el archivo stop.sh y este se ejecuta desde la consola de comandos
 ```bash
-wget -O - https://gitlab.com/duvanoffc1/MVA/raw/master/stop.sh | bash
+wget -O - https://github.com/duvanoff/docker-bank/blob/master/stop.sh | bash
 ```
 Este archivo contiene las instrucciones para detener y eliminar el contenedor.
