@@ -1,1 +1,1 @@
-docker run -d -p  80:80 --name api omadaco/sumamva
+docker run -d -p  7073:9998 --name api omadaco/sumamva
