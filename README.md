@@ -45,11 +45,11 @@ networks:
     driver: bridge
 ```
 
-2. Ejecución del contenedor global:
+1. Ejecución del contenedor global:
 ```
 sh start.sh
 ```
-3. Eliminación del contenedor y la imagen
+2. Eliminación del contenedor y la imagen
 Se descarga el archivo stop.sh y este se ejecuta desde la consola de comandos
 ```bash
 wget -O - https://github.com/duvanoff/docker-bank/blob/master/stop.sh | bash
