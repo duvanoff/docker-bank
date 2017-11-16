@@ -1,3 +1,3 @@
 
-docker build -t kmiloacdcs/capapresentacion .
-docker run -d  --name presentacion -p 8081:8081 kmiloacdcs/capapresentacion
+docker build -t duvanoff/api_presentacion .
+docker run -d  --name presentacion -p 7072:9999 duvanoff/api_presentacion
