@@ -1,2 +1,2 @@
-docker run -d -p 3000:3000 --name suma duvanoff/docker-bank
+docker-compose up --build
 docker ps
