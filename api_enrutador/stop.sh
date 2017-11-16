@@ -1,2 +1,1 @@
-docker stop api
-docker rm api
+docker stop api_enrutador
