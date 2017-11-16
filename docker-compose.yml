@@ -3,25 +3,25 @@ services:
   apienrutador:
     build: "api_enrutador/."
     ports:
-      - "7070:8080"
+      - "7071:8080"
     networks: 
       - "service-docker"
   apipresentacion:
     build: "api_presentacion/."
     ports:
-      - "7071:9999"
+      - "7072:9999"
     networks: 
       - "service-docker"
   apidespachador:
     build: "api_despachador/."
     ports:
-      - "7072:9998"
+      - "7073:9998"
     networks: 
       - "service-docker"
   apitransformacion:
     build: "api_transformacion/."
     ports:
-      - "7073:9997"
+      - "7074:9997"
     networks: 
       - "service-docker"
 networks:
