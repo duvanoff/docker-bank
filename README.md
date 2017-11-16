@@ -8,11 +8,41 @@ Se crearon 4 contenedores para orquestar consumo de servicios en PHP y Java.
 - Contenedor: API Presentación
 - Contenedor: API Despachador
 
-## Instrucciones
-1. Creación del contenedor
-Se descarga el archivo start.sh y este se ejecuta desde la consola de comandos
+## Comentarios
+
+El archivo docker-compose.yml contiene la orquestación de los servicios docker, definiendo cada uno de los puertos de consulta de los servicios y una red docker con nombre "service-docker" haciendo uso de un Bridge para que dichos servicios se conozcan dentro de la misma red.
+
+1. Dockerizacion de servicios
 ```bash
-wget -O - https://gitlab.com/duvanoffc1/MVA/raw/master/start.sh | bash
+version: '3'
+services:
+  apienrutador:
+    build: "api_enrutador/."
+    ports:
+      - "7071:8080"
+    networks: 
+      - "service-docker"
+  apipresentacion:
+    build: "api_presentacion/."
+    ports:
+      - "7072:9999"
+    networks: 
+      - "service-docker"
+  apidespachador:
+    build: "api_despachador/."
+    ports:
+      - "7073:9998"
+    networks: 
+      - "service-docker"
+  apitransformacion:
+    build: "api_transformacion/."
+    ports:
+      - "7074:9997"
+    networks: 
+      - "service-docker"
+networks:
+  service-docker:
+    driver: bridge
 ```
 Este archivo contiene las instrucciones para bajar la imagen de Docker HUB y crear el contenedor en un solo comando.
 
